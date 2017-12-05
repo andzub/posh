@@ -1,0 +1,434 @@
+body
+    min-height: 100%
+    margin: 0 auto
+    padding: 0
+    position: relative
+    font-family: "PTSansRegular", sans-serif
+    font-size: 16px
+    display: flex
+    flex-direction: column
+// a 
+//     text-decoration: none
+/**************************/
+/****** header start ******/
+/**************************/
+.header
+    position: absolute
+    width: 100%
+    margin: 0 auto
+    &__skin
+        height: 0px
+        background: rgb(255, 245, 109)
+    &__cover
+        max-width: 1200px
+        margin: 0 auto
+        padding: 30px 30px
+        position: relative
+        z-index: 12
+        &__top
+            max-width: 1200px
+            &__logo
+                font-size: 27px
+                text-decoration: none
+                color: #000
+                display: block
+        .hamburger
+            width: 30px
+            display: block
+            cursor: pointer
+            padding: 5px 0
+            float: right
+            &__line
+                margin-top: 7px
+                border-top: 2px solid #000
+            &__top
+                margin-top: 16px
+                transform: rotate(45deg)
+            &__mid
+                margin-top: -2px
+                transform: rotate(-45deg)
+            &__bot
+                display: none
+/************ nav menu ************/
+.menu
+    width: 100%
+    height: 0
+    // background: rgb(255, 245, 109)
+    background: #a3c8e2
+    margin: auto
+    &__container
+        max-width: 1200px
+        margin: auto
+        padding: 0 30px
+    &__cover
+        max-width: 650px
+        // margin: 0 auto
+        // padding: 0 30px
+        display: flex
+        // flex-wrap: wrap
+        justify-content: space-between
+        opacity: 0
+    &__block
+        // margin: 0 10px
+    &__list
+        margin: 15px 0px
+    &__link
+        text-decoration: none
+        font-size: 27px
+        color: #212121
+        &:hover
+            transition: 0.3s
+            color: #000
+    &__lang
+        // margin-right: 100px
+        display: flex
+        flex-direction: column
+        a
+            color: #847B37
+            margin-top: 10px 
+            &:hover
+                transition: 0.3s
+                color: #000
+
+/****** header finish *******/
+
+/****** wrapper start *******/
+.wrapper
+    max-width: 1520px
+    width: 100%
+    padding: 0 10px
+    box-sizing: border-box
+    margin: 0 auto
+    .title
+        max-width: 700px
+        margin: 110px 20px
+        font-family: "PTSansBold"
+        font-size: 50px
+        color: #222
+    .read-more
+        font-size: 20px
+        color: #222
+        font-weight: bold
+        &:hover
+            cursor: pointer
+    .read-more__hidden
+        display: none
+        max-width: 700px
+        height: auto
+        margin-left: 50px
+        margin-top: 20px
+    .read-more__text
+        height: auto
+        margin-bottom: 20px
+        font-size: 17px
+        line-height: 20px
+        color: #222
+    a
+        text-decoration: underline
+        color: #204768
+        font-size: 17px
+        &:hover
+            cursor: pointer
+.grid__box
+    width: 100%
+    display: flex
+    align-items: flex-start
+    margin-top: 50px
+.grid-item
+    width: 46%
+    height: auto
+    margin: 0 2%
+    overflow: hidden
+    position: relative
+.grid__double-item
+    width: 46%
+    height: auto
+    margin: 0 2%
+    display: flex
+    justify-content: space-between
+.grid__news-box
+    width: 46%
+    // max-height: 500px
+    // margin: 0 2%
+.grid__gif-box
+    width: 46%
+    // max-height: 500px
+    overflow: hidden
+    // margin: 0 2%
+.tile
+    margin-top: 65px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    &__item
+        position: relative
+        display: block
+        &:hover .infoText
+            opacity: 1
+.bigNews__image
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+        width: 100%
+
+.midNews
+    width: 100%
+    max-height: 500px
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__img
+        width: 100%
+        height: auto
+    &__title
+        align-self: flex-start
+        margin-top: 10px
+        font-size: 20px
+        text-decoration: none
+        font-family: "PTSansBold"
+        a
+            color: #222
+    &__description
+        margin-top: 10px
+        margin-bottom: 10px
+        font-size: 14px
+        overflow: hidden
+        color: #222
+        flex-grow: 1
+    &__date
+        color: #8c8c8c
+        overflow: hidden
+    &__more
+        align-self: flex-start
+        text-decoration: underline
+        font-family: "PTSansBold"
+        color: #204768
+        margin-bottom: 10px
+.midNewsImg__image
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: auto
+
+.smallNews
+    &__image
+        width: 100%
+
+.infoText
+    padding: 25px
+    overflow: hidden
+    position: absolute
+    display: none
+    top: 0px
+    left: 0px
+    bottom: 0px
+    right: 0px
+    display: block
+    z-index: 999
+    opacity: 0
+    font-size: 20px
+    color: #fff
+    transition: opacity 0.25s ease-out 0.1s
+    &__title
+        font-family: "PTSansBold"
+
+/* ---- grid start---- */
+
+// Slider
+.sl-slider
+    width: 100%
+    overflow: hidden
+    position: relative
+    div
+        margin: auto
+        overflow: hidden
+        img
+            width: 100%
+            height: auto
+            margin: 0 auto
+.slider__link
+    width: 80%
+    height: 100%
+    test-decoration: none
+    top: 0
+    left: 10%
+    right: 10%
+    display: block
+    position: absolute
+    background: transparent
+    &:hover .slider__infoText
+        display: block
+    .slider__infoText
+        width: 96%
+        height: 90%
+        margin-left: -13%
+        // opacity: 0
+        display: none
+        transition: opacity 0.25s ease-out 0.1s
+        overflow: hidden
+        padding: 5% 15%
+        font-size: 20px
+        color: #fff
+
+// block 1
+// block img
+.grid__img-box
+    // width: 100%
+    // height: auto
+// block slider
+.grid__slider-box
+    // width: 100%
+    // height: 500px
+    overflow: hidden
+// block video
+.grid:after 
+    content: ''
+    display: block
+    clear: both
+
+/* ---- grid finish---- */
+
+/* ---- footer start---- */
+.footer
+    max-width: 900px
+    width: 60%
+    margin: 100px 0px 100px 9.75vw
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    font-family: "PTSansRegular"
+    line-height: 26px
+    color: #8C8C8C
+    &__arrow-up
+        color: #000
+    &__left,
+    &__center
+        width: 240px
+    &__right
+        width: 80px
+    &__title
+        color: #000
+    &__link
+        display: block
+        text-decoration: none
+        color: #8C8C8C
+        &:hover
+            color: #000
+/* ---- footer finish---- */
+/**************************************/
+/*********** media queries ************/
+/**************************************/
+@media screen and (max-width: 1200px)
+    .grid__box
+        flex-direction: column
+        align-items: center
+        .grid-item
+            width: 100%
+            margin: 0 0 50px 0
+        .grid__double-item
+            width: 100% 
+            margin: 0 0 50px 0
+@media screen and (max-width: 968px)
+    .grid__double-item
+        flex-direction: column
+        align-items: center
+        .grid__news-box
+            width: 100%
+            margin-bottom: 50px
+            .midNews
+                max-height: 800px
+        .grid__gif-box
+            width: 100%
+@media screen and (max-width: 750px)
+    .menu__cover
+        flex-direction: column
+    .title h2
+        font-size: 30px
+@media screen and (max-width: 500px)
+    .title h2
+        font-size: 25px
+        .read-more
+            font-size: 16px
+/*************************************/
+/************ page WORK **************/
+/*************************************/
+.grid__box-work
+    display: flex
+    overflow: hidden
+    .grid__img-box-work
+        width: 1200px
+        max-height: 670px
+        overflow: hidden
+        img
+            width: 100%
+            height: auto
+    .slider-work
+        max-width: 1200px
+        height: 670px
+        overflow: hidden
+        .box-img-work
+            margin: auto
+            .img-work
+                max-width: 1200px
+                height: 670px
+    .grid__news-box-work
+        margin-left: 2%
+.imageText__block
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    .work__info-box
+        max-width: 1050px
+        display: flex
+        margin: 20px auto
+        h3
+            width: 40%
+            font-size: 30px
+            margin: 0 10px
+        p
+            width: 60%
+            font-size: 16px
+            margin: 0 10px
+    .img__box-work-big
+        width: 100%
+        height: auto
+        img
+            width: 100%
+            height: auto
+.work__block4
+    margin-top: 50px
+@media only screen and (max-width: 1200px)
+    .slider-work
+        width: 1000px
+        max-height: 570px
+        .img-work
+            max-height: 570px
+@media only screen and (max-width: 1050px)
+    .grid__box-work
+        flex-direction: column
+        .grid__img-box-work
+            width: 100%
+        .grid__news-box-work
+            margin: 50px auto
+@media only screen and (max-width: 1000px)
+    .slider-work
+        width: 800px
+        max-height: 470px
+        .img-work
+            max-height: 470px
+@media only screen and (max-width: 800px)
+    .slider-work
+        width: 600px
+        max-height: 370px
+        .img-work
+            max-height: 370px
+@media only screen and (max-width: 600px)
+    .slider-work
+        width: 400px
